@@ -1,3 +1,5 @@
+#nullable enable
+
 namespace thomson_project_1.Models
 {
     public class ErrorViewModel
