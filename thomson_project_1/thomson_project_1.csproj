@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+
+		<!-- These lines help Render build and run your app -->
+		<RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+		<PublishTrimmed>false</PublishTrimmed>
+		<SelfContained>false</SelfContained>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="wwwroot\images\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+	</ItemGroup>
+
+</Project>

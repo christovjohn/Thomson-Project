@@ -1,0 +1,14 @@
+﻿body {
+    background-color: #F3F4F6;
+}
+nav.navbar {
+    background-color: white; /* or any color you want */
+}
+
+.project_images img {
+    width: 625px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+}

@@ -1,0 +1,199 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@section Styles {
+    <link rel="stylesheet" href="@Url.Content("~/css/index.css")" />
+
+}
+
+<div class="posters">
+    <img src="@Url.Content("~/images/poliform-outdoor-slideshow-1920x775px-03_1944x.jpg")" class="img-fluid" alt="poster" />
+
+</div>
+<div class="container circle_card">
+    <div class="row">
+    </div>
+
+</div>
+
+<div class="container content">
+    <div class="row">
+        <div class="col-sm-6">
+            <h2 class="content_text">WE ARE</h2>
+            <h5 class="content_text_title">THOMSON SOLAR</h5>
+            <p class="content_text">
+                Thomson Solar is a leading global solar innovative and Solution
+                selling solar systems company .
+                Thomson Solar is ardently involved as a prominent Retailing of Solar Water Heater,
+                Solar Panel, Solar Battery etc. The company works to give the alternate energy market, now in its
+                infancy, a trusted and reliable source for energy solutions. It encourages customers to look beyond
+                the conventional and at the same time, make their contribution to preserving the planet.
+            </p>
+
+        </div>
+        <div class="col-sm-6">
+            <img src="~/images/3d-rendering-house-model.jpg" class=" img-fluid"
+                 style="height:500px; width:100%;" alt="image">
+        </div>
+
+    </div>
+
+</div>
+<div class="exprties">
+    <div class="container">
+        <div class="row">
+            <h2 class="experties_text">Our Expertise</h2>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img src="~/images/Engineering.jpg" class="card-img" alt="">
+                    <div class="card-body">
+                        <h1 class="card-title">Engineering</h1>
+                       
+                        <p class="card-info">
+                            Thorough site assessments and effective system designs that deploy
+                            cutting edge technology and best industry practices, guaranteeing optimal performance
+                        </p>
+
+                        <button class="card-btn">Read More</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="~/images/Procurement.jpg" class="card-img" alt="">
+                    <div class="card-body">
+                        <h1 class="card-title">Procurement</h1>
+                        
+                        <p class="card-info">
+                            Processes that involve best industry-practices to source premium
+                            products ensuring longevity and reliability of the solar system.
+                        </p>
+
+                        <button class="card-btn">Read More</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="~/images/Construction.jpg" class="card-img" alt="">
+                    <div class="card-body">
+                        <h1 class="card-title">Construction</h1>
+                       
+                        <p class="card-info">
+                            Skilled team capable of handling projects of any scale and ensuring
+                            timely execution to deliver precision and efficiency.
+                        </p>
+
+                        <button class="card-btn">Read More</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Why Choose Thomson?</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fa-solid fa-users fa-2x text-primary"></i>
+                            <h5>Expert Team</h5>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Our team consists of skilled professionals dedicated to excellence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fa-solid fa-lightbulb fa-2x text-warning"></i>
+                            <h5>Innovation</h5>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>We bring the latest technology to every project.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fa-solid fa-cogs fa-2x text-success"></i>
+                            <h5>Quality Components</h5>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Only the best materials for long-lasting performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fa-solid fa-clock fa-2x text-danger"></i>
+                            <h5>Timely Delivery</h5>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>We ensure every project is completed on time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="inputModal" tabindex="-1" aria-labelledby="inputModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="inputModalLabel">Thomson Computers</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="modal-heading">Get a call back in 10 minutes</h2>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputname" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="inputname">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                               placeholder="name@example.com">
+                    </div>
+
+                </div>
+
+                <div class="col-md-12">
+                    <label for="inputphonenumber" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" id="inputphonenumber">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>

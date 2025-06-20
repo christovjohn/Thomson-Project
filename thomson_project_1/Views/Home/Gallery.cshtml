@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Gallery";
+}
+@section Styles {
+    <link rel="stylesheet" href="@Url.Content("~/css/gallery.css")" />
+}
+
+<div class="container">
+    <div class="row">
+        @foreach (var imagePath in new[] {
+        "~/images/gettyimages1.jpg",
+        "~/images/gettyimages10.jpg",
+        "~/images/gettyimages2.jpg",
+        "~/images/gettyimages3.jpg",
+        "~/images/gettyimages4.jpg",
+        "~/images/gettyimages5.jpg",
+        "~/images/gettyimages6.jpg",
+        "~/images/gettyimages7.jpg",
+        "~/images/gettyimages8.jpg",
+        "~/images/gettyimages9.jpg",
+        "~/images/istockphoto.jpg"
+        })
+        {
+            <div class="project_images col-sm-12 col-md-6 col-lg-4 mb-4">
+                <img src="@Url.Content(imagePath)" class="img-fluid gallery-img" alt="project image" />
+            </div>
+        }
+    </div>
+</div>

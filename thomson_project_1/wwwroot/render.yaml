@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: thomson-project
+    runtime: dotnet
+    repo: https://github.com/christovjohn/Thomson-Project
+    buildCommand: dotnet publish -c Release -o out
+    startCommand: dotnet out/thomson_project_1.dll
+    branch: main
+    plan: free
+    autoDeploy: true

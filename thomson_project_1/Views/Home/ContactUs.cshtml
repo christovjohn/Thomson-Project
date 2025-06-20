@@ -1,0 +1,104 @@
+﻿@model thomson_project_1.Models.ContactFormModel
+@{
+    ViewData["Title"] = "ContactUs";
+}
+@section Styles {
+    <link rel="stylesheet" href="@Url.Content("~/css/contactus.css")" />
+}
+
+<div class="container">
+    <!-- <div class="center-wrapper">
+        <div class="text-with-icons">
+            <img src="./images_icons/fireworks_01a.svg" alt="star before" class="icon" />
+            <span class="main-text">Contact Us</span>
+            <img src="./images_icons/fireworks_01b.svg" alt="star after" class="icon" />
+        </div>
+    </div> -->
+    <div class="row d-flex justify-content-center">
+        <h2 class="contact_us_text">Contact Us</h2>
+
+
+    </div>
+    <div class="row">
+        <form asp-action="SendContactEmail" asp-controller="Home" method="post" class="row g-3">
+            <div class="col-md-6">
+                <label for="inputname" class="form-label">Name</label>
+                <input asp-for="Name" type="text" class="form-control" id="inputname">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input asp-for="Email" type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input asp-for="Address" type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input asp-for="Address2" type="text" class="form-control" id="inputAddress2"
+                       placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-5">
+                <label for="inputlandmark" class="form-label">Landmark</label>
+                <input type="text" asp-for="Landmark" class="form-control" id="inputlandmark">
+            </div>
+            <div class="col-md-3">
+                <label for="inputCity" class="form-label">City</label>
+                <input asp-for="City" type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select asp-for="State" id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>Kerala</option>
+                    <option>TamilNadu</option>
+                    <option>Karnataka</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input asp-for="Zip" type="text" inputmode="numeric" pattern="[0-9]*" class="form-control" id="inputZip">
+            </div>
+            <div class="col-md-2">
+                <label for="typeNumber" class="form-label">Phone</label>
+                <input asp-for="Phone" type="text" inputmode="numeric" pattern="[0-9]*" class="form-control" id="typeNumber">
+            </div>
+            <div class="md-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea asp-for="Message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-check">
+                        <input asp-for="Complaints" class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Complaints
+                        </label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-check">
+                        <input asp-for="Enquiry" class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Enquiry
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="gmap">
+        <h2 class="location_text">Our Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25124.371229573615!2d76.28535397247124!3d10.002622506351264!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b062fdab834de6f%3A0x691c22910163613c!2sThomson%20computers!5e1!3m2!1sen!2sin!4v1748502424745!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+</div>
+
