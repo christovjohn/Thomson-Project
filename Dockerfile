@@ -4,7 +4,7 @@ WORKDIR /src
 
 # Copy solution and project files
 COPY thomson_project_1.sln .
-COPY thomson_project_1/thomson_project_1/*.csproj ./thomson_project_1/
+COPY thomson_project_1/*.csproj ./thomson_project_1/
 
 # Restore dependencies
 RUN dotnet restore
