@@ -3,6 +3,8 @@ using System.Net.Mail;
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using thomson_project_1.Models;
+using Microsoft.Extensions.Logging;
+
 
 namespace thomson_project_1.Controllers;
 
