@@ -11,16 +11,12 @@
     background-color: red;
 }
 
-.head_strip_content {
-    padding: 5px;
+.head_strip_icon {
+    margin-right: 5px;
 }
 
 .head_strip_text {
     margin-top: 5px;
-}
-
-.Contact {
-    margin-left: 116px;
 }
 .footer {
     background-color: #252733;
