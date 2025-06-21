@@ -10,13 +10,20 @@
 .head_strip {
     background-color: red;
 }
+.head_strip_content{
+    padding-block:10px;
+}
 
 .head_strip_icon {
     margin-right: 5px;
+    color:white;
 }
 
 .head_strip_text {
     margin-top: 5px;
+}
+.head_strip_value {
+    color: white;
 }
 .footer {
     background-color: #252733;
