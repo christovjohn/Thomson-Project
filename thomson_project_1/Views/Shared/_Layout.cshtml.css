@@ -1,7 +1,11 @@
-﻿.navbar {
-    background-color: white; /* or any color you want */
+﻿.sticky_head {
     position: sticky;
     top: 0;
+    z-index: 1000;
+}
+.navbar {
+    background-color: white; /* or any color you want */
+   
 }
 .navbar-brand{
     color:black;
@@ -11,8 +15,7 @@
 }
 .head_strip {
     background-color: red;
-    position: sticky;
-    top: 0;
+    
 }
 .head_strip_content{
     padding-block:10px;
