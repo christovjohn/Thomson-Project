@@ -39,21 +39,21 @@ nav.navbar {
     }
 
 
-.location_text {
+.gmap {
     text-align: center;
     position: relative;
     width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    
 }
     .gmap iframe {
-        text-align: center;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         border-radius: 10px; /* optional */
-        padding-bottom: 56.25%; /* 16:9 aspect ratio */
-        height: 0;
-        overflow: hidden;
     }
 
