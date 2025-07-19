@@ -54,7 +54,7 @@ nav.navbar {
     overflow: hidden;
 }
 
-    .gmap_container iframe {
+.gmap_container iframe {
         position: absolute;
         top: 0;
         left: 0;
