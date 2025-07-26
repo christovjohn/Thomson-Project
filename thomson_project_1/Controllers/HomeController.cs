@@ -54,6 +54,26 @@ public class HomeController : Controller
 
         return View("ContactUs", model); // show validation errors
     }
+    public IActionResult SendPopupEmail(PopupFormModel model)
+    {
+        if (ModelState.IsValid)
+        {
+            var subject = "New Contact Request";
+            var body = $@"
+            Name: {model.Name}
+            Email: {model.Email}
+            
+            Phone: {model.Phone}
+            
+        ";
+
+            // Call the email sender (see Step 4)
+            SendEmail("mapalavarghese@gmail.com", subject, body); // Replace with your recipient email
+            return RedirectToAction("ThankYou"); // Create a ThankYou.cshtml
+        }
+
+        return View("Index", model); // show validation errors
+    }
     private void SendEmail(string to, string subject, string body)
     {
         var smtpClient = new SmtpClient("smtp.gmail.com")
