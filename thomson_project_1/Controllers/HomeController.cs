@@ -69,7 +69,7 @@ public class HomeController : Controller
 
             // Call the email sender (see Step 4)
             SendEmail("mapalavarghese@gmail.com", subject, body); // Replace with your recipient email
-            return RedirectToAction("ThankYou"); // Create a ThankYou.cshtml
+            return View("Index", model); // Create a ThankYou.cshtml
         }
 
         return View("Index", model); // show validation errors
