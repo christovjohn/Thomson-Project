@@ -72,6 +72,7 @@ public class HomeController : Controller
             //return View("Index", model);
             //return RedirectToAction("ThankYou"); // Create a ThankYou.cshtml
         }
+        TempData["ShowPopup"] = true;
 
         return View("Index", model); // show validation errors
     }

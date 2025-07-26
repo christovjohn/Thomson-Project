@@ -201,3 +201,10 @@
     </div>
 </div>
 </form>
+@if (TempData["ShowPopup"] != null && (bool)TempData["ShowPopup"])
+{
+    <script>
+        window.showPopupModal = true;
+    </script>
+}
+
