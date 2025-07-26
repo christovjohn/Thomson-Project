@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="@Url.Content("~/css/index.css")" />
 
 }
+@if (TempData["ShowPopup"] != null && (bool)TempData["ShowPopup"])
+{
+    <script>
+        window.showPopupModal = true;
+    </script>
+}
 
 <div class="posters">
     <img src="@Url.Content("~/images/poliform-outdoor-slideshow-1920x775px-03_1944x.jpg")" class="img-fluid" alt="poster" />
@@ -201,10 +207,6 @@
     </div>
 </div>
 </form>
-@if (TempData["ShowPopup"] != null && (bool)TempData["ShowPopup"])
-{
-    <script>
-        window.showPopupModal = true;
-    </script>
-}
+
+
 
