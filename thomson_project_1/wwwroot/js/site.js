@@ -15,8 +15,8 @@ window.onload = function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const complaintCheckbox = document.querySelector('complaintCheck');
-    const enquiryCheckbox = document.querySelector('enquiryCheck');
+    const complaintCheckbox = document.getElementById('complaintCheck');
+    const enquiryCheckbox = document.getElementById('enquiryCheck');
 
     if (complaintCheckbox && enquiryCheckbox) {
         complaintCheckbox.addEventListener('change', function () {
