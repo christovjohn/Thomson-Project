@@ -21,12 +21,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (complaintCheckbox && enquiryCheckbox) {
         complaintCheckbox.addEventListener('change', function () {
             if (this.checked) {
+                console.log("checked1");
                 enquiryCheckbox.checked = false;
             }
         });
 
         enquiryCheckbox.addEventListener('change', function () {
             if (this.checked) {
+                console.log("checked2");
                 complaintCheckbox.checked = false;
             }
         });
