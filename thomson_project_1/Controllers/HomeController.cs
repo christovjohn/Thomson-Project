@@ -58,7 +58,7 @@ public class HomeController : Controller
     {
         if (ModelState.IsValid)
         {
-            var subject = "New Contact Request";
+            var subject = "New Contact Request from Pop Up";
             var body = $@"
             Name: {model.Name}
             Email: {model.Email}
@@ -71,7 +71,7 @@ public class HomeController : Controller
             SendEmail("mapalavarghese@gmail.com", subject, body); // Replace with your recipient email
             TempData["ShowPopup"] = true;
             return View("Index");
-            //return RedirectToAction("ThankYou"); // Create a ThankYou.cshtml
+            
         }
        
 

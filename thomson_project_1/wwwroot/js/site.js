@@ -11,4 +11,24 @@ window.onload = function () {
         const myModal = new bootstrap.Modal(document.getElementById('inputModal'));
         myModal.show();
     }
-        };
+};
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const complaint = document.getElementById("complaintCheck");
+    const enquiry = document.getElementById("enquiryCheck");
+
+    complaint.addEventListener("change", function () {
+        if (this.checked) {
+            enquiry.checked = false;
+        }
+    });
+
+    enquiry.addEventListener("change", function () {
+        if (this.checked) {
+            complaint.checked = false;
+        }
+    });
+});
+
+
