@@ -14,21 +14,23 @@ window.onload = function () {
 };
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const complaint = document.getElementById("complaintCheck");
-    const enquiry = document.getElementById("enquiryCheck");
+document.addEventListener('DOMContentLoaded', function () {
+    const complaintCheckbox = document.querySelector('complaintCheck');
+    const enquiryCheckbox = document.querySelector('enquiryCheck');
 
-    complaint.addEventListener("change", function () {
-        if (this.checked) {
-            enquiry.checked = false;
-        }
-    });
+    if (complaintCheckbox && enquiryCheckbox) {
+        complaintCheckbox.addEventListener('change', function () {
+            if (this.checked) {
+                enquiryCheckbox.checked = false;
+            }
+        });
 
-    enquiry.addEventListener("change", function () {
-        if (this.checked) {
-            complaint.checked = false;
-        }
-    });
+        enquiryCheckbox.addEventListener('change', function () {
+            if (this.checked) {
+                complaintCheckbox.checked = false;
+            }
+        });
+    }
 });
 
 
