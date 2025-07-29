@@ -1,5 +1,8 @@
-﻿namespace thomson_project_1.Models
+﻿using thomson_project_1.Models.Validation;
+
+namespace thomson_project_1.Models
 {
+    [OnlyOneSelected(ErrorMessage = "Please select either Complaints or Enquiry, not both.")]
     public class ContactFormModel
     {
         public required string Name { get; set; }

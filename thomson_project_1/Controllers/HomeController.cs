@@ -62,9 +62,7 @@ public class HomeController : Controller
             var body = $@"
             Name: {model.Name}
             Email: {model.Email}
-            
-            Phone: {model.Phone}
-            
+            Phone: {model.Phone}    
         ";
 
             // Call the email sender (see Step 4)
@@ -97,7 +95,19 @@ public class HomeController : Controller
 
         smtpClient.Send(mailMessage);
     }
-    public IActionResult ContactUs() { return View(); }
+    [HttpPost]
+    public IActionResult ContactUs(ContactFormModel model)
+    {
+        if (!ModelState.IsValid)
+        {
+            // Return view with error message
+            return View(model);
+        }
+
+        // Proceed with logic
+        return RedirectToAction("Success");
+    }
+
     public IActionResult ThankYou()
     {
         return View();
