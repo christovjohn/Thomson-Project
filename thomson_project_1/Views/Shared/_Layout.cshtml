@@ -15,6 +15,9 @@
     <script src="https://kit.fontawesome.com/1266619c4c.js" crossorigin="anonymous"></script>
   
     @RenderSection("Styles", required: false)
+    @section Scripts {
+        @await Html.PartialAsync("_ValidationScriptsPartial")
+    }
     
 </head>
 <body>

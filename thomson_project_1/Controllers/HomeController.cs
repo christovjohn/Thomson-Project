@@ -95,7 +95,7 @@ public class HomeController : Controller
 
         smtpClient.Send(mailMessage);
     }
-    [HttpPost]
+    
     public IActionResult ContactUs(ContactFormModel model)
     {
         if (!ModelState.IsValid)
