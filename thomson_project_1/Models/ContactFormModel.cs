@@ -1,5 +1,5 @@
 ﻿using thomson_project_1.Models.Validation;
-
+using System.ComponentModel.DataAnnotations;
 namespace thomson_project_1.Models
 {
     [OnlyOneSelected(ErrorMessage = "Please select either Complaints or Enquiry, not both.")]
