@@ -3,67 +3,11 @@
     ViewData["Title"] = "Mission";
 }
 @section Styles {
-    <link rel="stylesheet" href="@Url.Content("~/css/contactus.css")" />
-}
-@{
-    ViewData["Title"] = "Our Mission";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+    <link href="~/css/mission.css" rel="stylesheet" />
 }
 
-@section Styles {
-    <style>
-        /* Hero section */
-        .mission-hero {
-            background: url('/images/solar-hero.jpg') center center/cover no-repeat;
-            color: white;
-            text-align: center;
-            padding: 120px 20px;
-            position: relative;
-        }
 
-            .mission-hero::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: rgba(0, 0, 0, 0.4);
-            }
-
-            .mission-hero h1, .mission-hero p {
-                position: relative;
-                z-index: 1;
-            }
-
-        /* Core values section */
-        .core-values i {
-            font-size: 40px;
-            color: #f39c12;
-            margin-bottom: 15px;
-        }
-
-        .core-values h5 {
-            font-weight: 600;
-        }
-
-        /* Timeline */
-        .timeline {
-            border-left: 3px solid #f39c12;
-            margin-left: 20px;
-            padding-left: 20px;
-        }
-
-        .timeline-item {
-            margin-bottom: 30px;
-        }
-
-            .timeline-item h6 {
-                color: #f39c12;
-                font-weight: bold;
-            }
-    </style>
-}
 
 <!-- Hero Section -->
 <section class="mission-hero">
