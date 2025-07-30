@@ -7,6 +7,8 @@ nav.navbar {
 }
 .mission-hero {
     background: url('/images/sage.jpg');
+    width:100%;
+    height:auto;
     color: white;
     text-align: center;
     padding: 120px 20px;
