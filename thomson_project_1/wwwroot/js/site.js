@@ -14,25 +14,25 @@ window.onload = function () {
 };
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const complaintCheckbox = document.getElementById('complaintCheck');
-    const enquiryCheckbox = document.getElementById('enquiryCheck');
+//document.addEventListener('DOMContentLoaded', function () {
+//    const complaintCheckbox = document.getElementById('complaintCheck');
+//    const enquiryCheckbox = document.getElementById('enquiryCheck');
 
-    if (complaintCheckbox && enquiryCheckbox) {
-        complaintCheckbox.addEventListener('change', function () {
-            if (this.checked) {
-                console.log("checked1");
-                enquiryCheckbox.checked = false;
-            }
-        });
+//    if (complaintCheckbox && enquiryCheckbox) {
+//        complaintCheckbox.addEventListener('change', function () {
+//            if (this.checked) {
+//                console.log("checked1");
+//                enquiryCheckbox.checked = false;
+//            }
+//        });
 
-        enquiryCheckbox.addEventListener('change', function () {
-            if (this.checked) {
-                console.log("checked2");
-                complaintCheckbox.checked = false;
-            }
-        });
-    }
-});
+//        enquiryCheckbox.addEventListener('change', function () {
+//            if (this.checked) {
+//                console.log("checked2");
+//                complaintCheckbox.checked = false;
+//            }
+//        });
+//    }
+//});
 
 
