@@ -20,7 +20,7 @@ nav.navbar {
     }
 
 .mission-hero {
-    background: url('/images/mission-banner.jpg') center center no-repeat;
+    background: url('/images/sage.jpg') center center no-repeat;
     background-size: contain; /* Show full image */
     background-color: #000; /* Optional: fills empty space */
 }
