@@ -6,24 +6,35 @@ nav.navbar {
     background-color: white; /* or any color you want */
 }
 .mission-hero {
-    background: url('/images/sage.jpg');
-    width:100%;
-    height:auto;
-    color: white;
-    text-align: center;
-    padding: 120px 20px;
     position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
 }
 
-    .mission-hero::after {
+    .mission-hero::before {
         content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.4);
+        display: block;
+        padding-top: calc(357 / 952 * 100%); /* Maintain aspect ratio (≈37.5%) */
     }
+
+.mission-hero {
+    background: url('/images/mission-banner.jpg') center center no-repeat;
+    background-size: contain; /* Show full image */
+    background-color: #000; /* Optional: fills empty space */
+}
+
+.mission-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    padding: 1rem;
+}
+
 
     .mission-hero h1, .mission-hero p {
         position: relative;
