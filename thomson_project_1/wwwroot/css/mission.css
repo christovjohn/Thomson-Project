@@ -8,9 +8,12 @@ nav.navbar {
 .mission-hero {
     position: relative;
     width: 100%;
-    height: auto;
     text-align: center;
     overflow: hidden;
+    background: url('/images/solar-panel-banner.jpg') center center no-repeat;
+    background-size: contain; /* Show full image */
+    background-color: #000; /* Optional: fills empty space */
+    min-height: 200px;
 }
 
     .mission-hero::before {
@@ -19,11 +22,7 @@ nav.navbar {
         padding-top: calc(357 / 952 * 100%); /* Maintain aspect ratio (≈37.5%) */
     }
 
-.mission-hero {
-    background: url('/images/solar-panel-banner.jpg') center center no-repeat;
-    background-size: contain; /* Show full image */
-    background-color: #000; /* Optional: fills empty space */
-}
+
 
 .mission-overlay {
     position: absolute;
@@ -33,6 +32,7 @@ nav.navbar {
     color: white;
     text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
     padding: 1rem;
+    width: 90%;
 }
 
 
@@ -40,6 +40,20 @@ nav.navbar {
         position: relative;
         z-index: 1;
     }
+/* Make text smaller and adjust position on small screens */
+@media (max-width: 576px) {
+    .mission-overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    .mission-overlay p {
+        font-size: 1rem;
+    }
+
+    .mission-overlay {
+        top: 60%; /* Push down a bit for visibility */
+    }
+}
 
 /* Core values section */
 .core-values i {
