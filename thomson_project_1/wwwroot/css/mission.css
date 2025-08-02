@@ -7,8 +7,8 @@ nav.navbar {
 }
 .mission-hero {
     position: relative;
-/*    width: 100%;
-    height: auto;*/
+    width: 100%;
+    height: auto;
     text-align: center;
     overflow: hidden;
 }
