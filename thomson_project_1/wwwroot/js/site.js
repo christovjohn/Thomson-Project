@@ -3,6 +3,17 @@
 
 // Write your JavaScript code.
 
+
+debugger
+window.onload = function () {
+    if (window.showPopupModal === true) {
+        const myModal = new bootstrap.Modal(document.getElementById('inputModal'));
+        myModal.hide();
+    } else {
+        const myModal = new bootstrap.Modal(document.getElementById('inputModal'));
+        myModal.show();
+    }
+};
 document.getElementById("SendPopupEmail").addEventListener("submit", function (e) {
     // Silent check: if any required field is empty, stop submit
     let isValid = true;
@@ -15,16 +26,6 @@ document.getElementById("SendPopupEmail").addEventListener("submit", function (e
         e.preventDefault();
     }
 });
-
-window.onload = function () {
-    if (window.showPopupModal === true) {
-        const myModal = new bootstrap.Modal(document.getElementById('inputModal'));
-        myModal.hide();
-    } else {
-        const myModal = new bootstrap.Modal(document.getElementById('inputModal'));
-        myModal.show();
-    }
-};
 
 
 document.addEventListener('DOMContentLoaded', function () {
