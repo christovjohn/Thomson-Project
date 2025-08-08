@@ -3,7 +3,7 @@
 
 // Write your JavaScript code.
 
-document.getElementById("popupForm").addEventListener("submit", function (e) {
+document.getElementById("SendPopupEmail").addEventListener("submit", function (e) {
     // Silent check: if any required field is empty, stop submit
     let isValid = true;
     this.querySelectorAll("[required]").forEach(function (input) {
