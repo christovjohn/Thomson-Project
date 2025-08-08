@@ -3,6 +3,19 @@
 
 // Write your JavaScript code.
 
+document.getElementById("popupForm").addEventListener("submit", function (e) {
+    // Silent check: if any required field is empty, stop submit
+    let isValid = true;
+    this.querySelectorAll("[required]").forEach(function (input) {
+        if (!input.value.trim()) {
+            isValid = false;
+        }
+    });
+    if (!isValid) {
+        e.preventDefault();
+    }
+});
+
 window.onload = function () {
     if (window.showPopupModal === true) {
         const myModal = new bootstrap.Modal(document.getElementById('inputModal'));
