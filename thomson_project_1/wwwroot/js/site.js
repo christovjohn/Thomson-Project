@@ -4,7 +4,7 @@
 // Write your JavaScript code.
 
 
-
+debugger
 window.onload = function () {
     if (window.showPopupModal === true) {
         const myModal = new bootstrap.Modal(document.getElementById('inputModal'));
@@ -27,7 +27,7 @@ document.getElementById("SendPopupEmail").addEventListener("submit", function (e
     }
 });
 
-
+debugger
 document.addEventListener('DOMContentLoaded', function () {
     const complaintCheckbox = document.getElementById('complaintCheck');
     const enquiryCheckbox = document.getElementById('enquiryCheck');
