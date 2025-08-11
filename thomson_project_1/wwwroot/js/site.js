@@ -4,7 +4,7 @@
 // Write your JavaScript code.
 
 
-debugger
+
 window.onload = function () {
     if (window.showPopupModal === true) {
         const myModal = new bootstrap.Modal(document.getElementById('inputModal'));

@@ -22,32 +22,32 @@
         <form asp-action="SendContactEmail" asp-controller="Home" method="post" class="row g-3">
             <div class="col-md-6">
                 <label for="inputname" class="form-label">Name</label>
-                <input asp-for="Name" type="text" class="form-control" id="inputname">
+                <input asp-for="Name" type="text" class="form-control" id="inputname" required>
             </div>
             <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Email</label>
-                <input asp-for="Email" type="email" class="form-control" id="inputEmail4">
+                <input asp-for="Email" type="email" class="form-control" id="inputEmail4" required>
             </div>
             <div class="col-12">
                 <label for="inputAddress" class="form-label">Address</label>
-                <input asp-for="Address" type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <input asp-for="Address" type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
             </div>
             <div class="col-12">
                 <label for="inputAddress2" class="form-label">Address 2</label>
                 <input asp-for="Address2" type="text" class="form-control" id="inputAddress2"
-                       placeholder="Apartment, studio, or floor">
+                       placeholder="Apartment, studio, or floor" required>
             </div>
             <div class="col-md-5">
                 <label for="inputlandmark" class="form-label">Landmark</label>
-                <input type="text" asp-for="Landmark" class="form-control" id="inputlandmark">
+                <input type="text" asp-for="Landmark" class="form-control" id="inputlandmark" required>
             </div>
             <div class="col-md-3">
                 <label for="inputCity" class="form-label">City</label>
-                <input asp-for="City" type="text" class="form-control" id="inputCity">
+                <input asp-for="City" type="text" class="form-control" id="inputCity" required>
             </div>
             <div class="col-md-4">
                 <label for="inputState" class="form-label">State</label>
-                <select asp-for="State" id="inputState" class="form-select">
+                <select asp-for="State" id="inputState" class="form-select" required>
                     <option selected>Choose...</option>
                     <option>Kerala</option>
                     <option>TamilNadu</option>
@@ -56,15 +56,15 @@
             </div>
             <div class="col-md-2">
                 <label for="inputZip" class="form-label">Zip</label>
-                <input asp-for="Zip" type="text" inputmode="numeric" pattern="[0-9]*" class="form-control" id="inputZip">
+                <input asp-for="Zip" type="text" inputmode="numeric" pattern="[0-9]*" class="form-control" id="inputZip" required>
             </div>
             <div class="col-md-2">
                 <label for="typeNumber" class="form-label">Phone</label>
-                <input asp-for="Phone" type="text" inputmode="numeric" pattern="[0-9]*" class="form-control" id="typeNumber">
+                <input asp-for="Phone" type="text" inputmode="numeric" pattern="[0-9]*" class="form-control" id="typeNumber" required>
             </div>
             <div class="md-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                <textarea asp-for="Message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea asp-for="Message" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
             </div>
             <div class="row">
                 <div class="col-6">
