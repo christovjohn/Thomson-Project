@@ -12,7 +12,7 @@
     }
 
     // --- Form Validation ---
-    const sendPopupForm = document.getElementById("SendPopupEmail");
+    const sendPopupForm = document.getElementById("inputModal");
     if (sendPopupForm) {
         sendPopupForm.addEventListener("submit", function (e) {
             let isValid = true;
