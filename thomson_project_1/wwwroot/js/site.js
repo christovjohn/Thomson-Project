@@ -1,52 +1,42 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿document.addEventListener('DOMContentLoaded', function () {
 
-// Write your JavaScript code.
-
-
-debugger
-window.onload = function () {
-    if (window.showPopupModal === true) {
-        const myModal = new bootstrap.Modal(document.getElementById('inputModal'));
-        myModal.hide();
-    } else {
-        const myModal = new bootstrap.Modal(document.getElementById('inputModal'));
-        myModal.show();
-    }
-};
-document.getElementById("inputModal").addEventListener("submit", function (e) {
-    // Silent check: if any required field is empty, stop submit
-    let isValid = true;
-    this.querySelectorAll("[required]").forEach(function (input) {
-        if (!input.value.trim()) {
-            isValid = false;
+    // --- Modal Logic ---
+    const modalElement = document.getElementById('inputModal');
+    if (modalElement) {
+        const myModal = new bootstrap.Modal(modalElement);
+        if (window.showPopupModal === true) {
+            myModal.hide();
+        } else {
+            myModal.show();
         }
-    });
-    if (!isValid) {
-        e.preventDefault();
     }
-});
 
-debugger
-document.addEventListener('DOMContentLoaded', function () {
+    // --- Form Validation ---
+    const sendPopupForm = document.getElementById("SendPopupEmail");
+    if (sendPopupForm) {
+        sendPopupForm.addEventListener("submit", function (e) {
+            let isValid = true;
+            this.querySelectorAll("[required]").forEach(function (input) {
+                if (!input.value.trim()) {
+                    isValid = false;
+                }
+            });
+            if (!isValid) {
+                e.preventDefault();
+            }
+        });
+    }
+
+    // --- Complaint / Enquiry Toggle ---
     const complaintCheckbox = document.getElementById('complaintCheck');
     const enquiryCheckbox = document.getElementById('enquiryCheck');
-
     if (complaintCheckbox && enquiryCheckbox) {
         complaintCheckbox.addEventListener('change', function () {
-            if (this.checked) {
-                console.log("checked1");
-                enquiryCheckbox.checked = false;
-            }
+            if (this.checked) enquiryCheckbox.checked = false;
         });
-
         enquiryCheckbox.addEventListener('change', function () {
-            if (this.checked) {
-                console.log("checked2");
-                complaintCheckbox.checked = false;
-            }
+            if (this.checked) complaintCheckbox.checked = false;
         });
     }
+
 });
-
-
