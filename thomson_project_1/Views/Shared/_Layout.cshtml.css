@@ -32,6 +32,15 @@
 .head_strip_value {
     color: white;
 }
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* full screen height */
+}
+
+main {
+    flex-grow: 1; /* pushes footer to bottom */
+}
 .footer {
     background-color: #252733;
 /*    position: fixed;*/
