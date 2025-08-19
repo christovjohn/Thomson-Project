@@ -9,13 +9,13 @@
 }
 
 .content_text_title {
-    font-size: 40px;
+    font-size: 1.25rem;
     background-image: url(../images/blue_highlight_01.svg);
     background-position: center 99%;
     background-repeat: no-repeat;
     display: inline-block;
     font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .content_text {
