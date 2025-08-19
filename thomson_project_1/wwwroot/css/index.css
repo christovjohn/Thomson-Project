@@ -1,6 +1,9 @@
 ﻿body {
     background-color: #F3F4F6;
 }
+.img-fluid {
+    width: 100%;
+}
 .content {
     padding: 20px;
 }
