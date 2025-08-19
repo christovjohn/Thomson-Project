@@ -9,17 +9,21 @@
 }
 
 .content_text_title {
-    font-size: 1.25rem;
+    font-size: 40px;
     background-image: url(../images/blue_highlight_01.svg);
     background-position: center 99%;
     background-repeat: no-repeat;
     display: inline-block;
     font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .content_text {
     font-family: 'roboto', sans-serif;
+}
+.content_data{
+    font-size:1.25rem;
+    font-weight:300;
 }
 
 .exprties {
