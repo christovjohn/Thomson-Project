@@ -65,9 +65,12 @@ nav.navbar {
 .core-values h5 {
     font-weight: 600;
 }
-
-/* Timeline */
-.timeline {
+.core-values p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+    /* Timeline */
+    .timeline {
     border-left: 3px solid #f39c12;
     margin-left: 20px;
     padding-left: 20px;
@@ -80,4 +83,9 @@ nav.navbar {
     .timeline-item h6 {
         color: #f39c12;
         font-weight: bold;
+    }
+
+    .timeline-item p {
+        font-size: 1.25rem;
+        font-weight: 300;
     }
