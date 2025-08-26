@@ -5,7 +5,7 @@
     width: 100%;
 }
 @media (max-width: 576px) {
-    .img-fluid {
+    .posters {
         min-height: 50px; /* ensures at least 50px height */
         object-fit: cover; /* keeps aspect ratio, avoids distortion */
     }
