@@ -6,7 +6,7 @@
 }
 @media (max-width: 576px) {
     .img-fluid {
-        min-height: 150px; /* ensures at least 50px height */
+        min-height: 215px; /* ensures at least 50px height */
 /*        object-fit: cover; */
     }
 }
