@@ -5,9 +5,9 @@
     width: 100%;
 }
 @media (max-width: 576px) {
-    .posters {
-        min-height: 50px; /* ensures at least 50px height */
-        object-fit: cover; /* keeps aspect ratio, avoids distortion */
+    .img-fluid {
+        min-height: 150px; /* ensures at least 50px height */
+/*        object-fit: cover; */
     }
 }
 .content {
