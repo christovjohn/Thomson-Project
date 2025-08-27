@@ -42,8 +42,8 @@ main {
     flex-grow: 1; /* pushes footer to bottom */
 }
 .footer {
-    background-color: #252733;
-/*    position: fixed;*/
+    background-color: #40464d;
+    /*    position: fixed;*/
     bottom: 0;
     width: 100%;
 }
