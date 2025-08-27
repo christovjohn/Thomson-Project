@@ -42,7 +42,7 @@ main {
     flex-grow: 1; /* pushes footer to bottom */
 }
 .footer {
-    background-color: #40464d;
+    background-color: #383c40;
     /*    position: fixed;*/
     bottom: 0;
     width: 100%;
