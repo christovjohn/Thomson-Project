@@ -89,3 +89,25 @@ nav.navbar {
         font-size: 1.25rem;
         font-weight: 300;
     }
+
+/*    button contact us*/
+
+.btn-contact {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+    .btn-contact:hover {
+        background: linear-gradient(135deg, #e67e22, #d35400);
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    }
