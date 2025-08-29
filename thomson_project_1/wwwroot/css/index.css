@@ -137,6 +137,9 @@
     transform-style: preserve-3d;
     transition: transform 0.5s;
 }
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
