@@ -122,7 +122,9 @@
     font-weight: 500;
     cursor: pointer;
 }
-
+.flip-title {
+    text-align: center;
+}
 
 
 .flip-card {
