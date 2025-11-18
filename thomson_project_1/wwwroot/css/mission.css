@@ -135,10 +135,10 @@ nav.navbar {
         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
     }
 .green-future {
-    
-    background-repeat: no-repeat;
+     width:80px;
+/*    background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: contain;*/
    
 }
 .green-future-text {
