@@ -135,8 +135,8 @@ nav.navbar {
         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
     }
 .green-future {
-    background-image: url('../images/red_highlight_bold_05.svg');
-   
+    
+    background-image: url('../images/grey_arrow_loop_02.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
