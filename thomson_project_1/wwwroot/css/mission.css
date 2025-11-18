@@ -91,7 +91,19 @@ nav.navbar {
     }
 
 /*    button contact us*/
-
+.our-journey {
+    text-align: center;
+    background-image: url('../images/circle.svg');
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-size: 40px;
+    line-height: 1.0714285714;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
 .btn-contact {
     display: inline-block;
     padding: 12px 28px;
