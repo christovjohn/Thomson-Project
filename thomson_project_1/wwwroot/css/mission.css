@@ -54,7 +54,18 @@ nav.navbar {
         top: 60%; /* Push down a bit for visibility */
     }
 }
+.what-drive-us {
+    background-image: url('../images/yellow_highlight_03.svg');
 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-size: 40px;
+    line-height: 1.0714285714;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
 /* Core values section */
 .core-values i {
     font-size: 40px;
@@ -123,3 +134,15 @@ nav.navbar {
         transform: translateY(-3px) scale(1.05);
         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
     }
+.green-future {
+    background-image: url('../images/red_highlight_bold_05.svg');
+   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-size: 40px;
+    line-height: 1.0714285714;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
