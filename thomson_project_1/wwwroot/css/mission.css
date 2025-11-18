@@ -136,10 +136,12 @@ nav.navbar {
     }
 .green-future {
     
-    background-image: url('../images/grey_arrow_loop_02.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+   
+}
+.green-future-text {
     font-size: 40px;
     line-height: 1.0714285714;
     font-weight: 600;
