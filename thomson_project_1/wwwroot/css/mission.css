@@ -151,7 +151,7 @@ nav.navbar {
 .lead {
     background: url('/images/grey_arrow_loop_02.svg') center center no-repeat;
     background-size: cover;
-    padding: 40px 0;
+    width: 80px;
     /*    background-repeat: no-repeat;
     background-position: center;
     background-size: contain*/
