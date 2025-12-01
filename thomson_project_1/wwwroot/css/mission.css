@@ -150,6 +150,6 @@ nav.navbar {
 }
 .lead-green-future {
     background: url('/images/grey_arrow_loop_02.svg') center center no-repeat;
-    background-size: cover;
-    width: 80px;
+    background-size: contain;
+    height: 82px;
 }
