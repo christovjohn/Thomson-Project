@@ -148,3 +148,9 @@ nav.navbar {
     letter-spacing: -0.005em;
     font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+.lead {
+    background-image: url('../images/grey_arrow_loop_02.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain
+}
