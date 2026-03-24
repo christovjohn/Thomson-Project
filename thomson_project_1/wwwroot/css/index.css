@@ -1,15 +1,19 @@
-﻿body {
+body {
     background-color: #F3F4F6;
 }
+
 .img-fluid {
     width: 100%;
 }
+
 @media (max-width: 576px) {
     .img-fluid {
-        min-height: 215px; /* ensures at least 50px height */
-/*        object-fit: cover; */
+        min-height: 215px;
+        /* ensures at least 50px height */
+        /*        object-fit: cover; */
     }
 }
+
 .content {
     padding: 20px;
 }
@@ -28,9 +32,10 @@
 .content_text {
     font-family: 'roboto', sans-serif;
 }
-.content_data{
-    font-size:1.25rem;
-    font-weight:300;
+
+.content_data {
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 .exprties {
@@ -95,7 +100,7 @@
 }
 
 .card-title {
-   
+
     text-transform: uppercase;
     font-family: 'roboto', sans-serif;
     font-size: 30px;
@@ -122,6 +127,7 @@
     font-weight: 500;
     cursor: pointer;
 }
+
 .flip-title {
     text-align: center;
     background-image: url('../images/blue_highlight_bold_03.svg');
@@ -148,15 +154,19 @@
     transform-style: preserve-3d;
     transition: transform 0.5s;
 }
-/*.flip-card.flipped .flip-card-inner {
-    transform: rotateY(180deg);
-}*/
 
-.flip-card:hover .flip-card-inner {
+.flip-card.flipped .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+@media (hover: hover) {
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+}
+
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -174,6 +184,7 @@
     background: #007bff;
     color: white;
 }
+
 .modal-heading {
     text-align: center;
 }

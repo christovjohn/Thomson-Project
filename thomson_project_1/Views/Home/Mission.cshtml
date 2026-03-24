@@ -1,4 +1,4 @@
-﻿
+
 @{
     ViewData["Title"] = "Mission";
 }
@@ -6,21 +6,14 @@
     
     <link href="~/css/mission.css" rel="stylesheet" />
 }
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-@section Scripts{
-    <script>
-    AOS.init();
-</script>
-}
 
 
 
 <!-- Hero Section -->
 <section class="mission-hero">
     <div class="mission-overlay">
-        <h1>Our Mission</h1>
+        <h1 class="animated-heading" data-aos="zoom-in-up">Our Mission</h1>
         <p>Empowering Kottayam with sustainable and affordable solar energy solutions</p>
     </div>
 </section>
@@ -31,7 +24,7 @@
     <!-- Mission Statement -->
     <div class="row text-center mb-5">
         <div class="col">
-            <h2 class="what-drive-us">What Drives Us</h2>
+            <h2 class="what-drive-us animated-heading" data-aos="zoom-in-up">What Drives Us</h2>
             <p class="lead">
                 At <strong>Thomson Solar</strong>, we are committed to helping homes and businesses
                 reduce electricity costs, embrace green energy, and create a brighter future.
@@ -66,7 +59,7 @@
     <!-- Timeline -->
     <div class="row mb-5">
         <div class="col-md-8 mx-auto">
-            <h3 class="our-journey mb-4">Our Journey</h3>
+            <h3 class="our-journey mb-4 animated-heading" data-aos="zoom-in-up">Our Journey</h3>
             <div class="timeline">
                 <div class="timeline-item">
                     <h6>2010</h6>
@@ -87,7 +80,7 @@
     <!-- Call to Action -->
     <div class="row text-center my-5">
         <div class="col">
-            <h2 class="green-future-text">Be Part of a Greener Future</h2>
+            <h2 class="green-future-text animated-heading" data-aos="zoom-in-up">Be Part of a Greener Future</h2>
             <p class="lead-green-future">Reduce your electricity costs and support a sustainable tomorrow.</p>
             <a href="@Url.Action("ContactUs", "Home")" class="btn-contact" data-aos="fade-up" data-aos-duration="1000">Contact Us Today</a>
         </div>
