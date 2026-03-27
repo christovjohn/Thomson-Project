@@ -1,46 +1,57 @@
-﻿.sticky_head {
+/* Sticky wrapper for navbar - keeps the navigation bar fixed at the top on scroll */
+.sticky_head {
     position: sticky;
     top: 0;
     z-index: 1000;
 }
+
+/* Semi-transparent navbar background */
 .navbar {
-    background-color: white; /* or any color you want */
-   
+    background: rgba(255, 255, 255, 0.2) !important;
 }
-.navbar-brand{
-    color:black;
+
+.navbar-brand {
+    color: black;
 }
+
 .nav-link {
     color: black;
 }
+
+/* Top info strip - red bar showing contact info, location, email */
 .head_strip {
     background-color: red;
-    
 }
-.head_strip_content{
-    padding-block:10px;
+
+.head_strip_content {
+    padding-block: 10px;
 }
 
 .head_strip_icon {
     margin-right: 5px;
-    color:white;
+    color: white;
 }
 
 .head_strip_text {
     margin-top: 5px;
 }
+
 .head_strip_value {
     color: white;
 }
+
 .page-wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* full screen height */
+    min-height: 100vh;
+    /* full screen height */
 }
 
 main {
-    flex-grow: 1; /* pushes footer to bottom */
+    flex-grow: 1;
+    /* pushes footer to bottom */
 }
+
 .footer {
     background-color: #383c40;
     /*    position: fixed;*/
@@ -54,7 +65,7 @@ main {
     color: #FFFFFF;
 }
 
-.footer_About_Us {    
+.footer_About_Us {
     color: #FFFFFF;
 }
 
