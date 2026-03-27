@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 .whatsapp-float {
     position: fixed;
@@ -24,10 +27,18 @@
         }
 
 .animated-heading {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .animated-heading:hover {
-    transform: scale(1.05) translateY(-3px);
-    text-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02) translateY(-1px);
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Reduce the "coming from deep down" effect for a premium feel (Headings Only) */
+.animated-heading[data-aos="fade-up"] {
+    transform: translateY(20px) !important;
+}
+.animated-heading[data-aos="fade-up"].aos-animate {
+    transform: translateY(0) !important;
 }
